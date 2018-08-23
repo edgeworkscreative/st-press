@@ -1,0 +1,46 @@
+{
+  "name": "@edgeworkscreative/st-press",
+  "version": "1.0.2",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "npm run rollup && npm run uglify",
+    "rollup": "rollup -c",
+    "uglify": "uglifyjs --compress --mangle -o ./dist/index.js -- ./dist/index.js",
+    "lint": "tslint --project tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edgeworkscreative/st-press.git"
+  },
+  "keywords": [
+    "Stencil",
+    "StencilJS",
+    "JSX",
+    "Ionic4",
+    "event"
+  ],
+  "author": "Edgeworks Creative",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edgeworkscreative/st-press"
+  },
+  "homepage": "https://github.com/edgeworkscreative/st-press",
+  "devDependencies": {
+    "@studio/changes": "^1.5.2",
+    "@types/jasmine": "^2.8.8",
+    "@types/node": "^8.5.1",
+    "rollup": "^0.56.2",
+    "rollup-plugin-commonjs": "^9.1.4",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.2.1",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-typescript2": "^0.16.1",
+    "tcs": "^10.0.0",
+    "tslint": "^5.10.0",
+    "tslint-ionic-rules": "0.0.14",
+    "typescript": "2.9.1",
+    "uglify-es": "^3.3.9"
+  }
+}
