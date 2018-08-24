@@ -1,4 +1,4 @@
-interface HTMLAttributes {
+interface StencilGlobalHTMLAttributes {
     'onPress'?: (event: CustomEvent<void>) => void;
 }
 declare class PressEvents {
